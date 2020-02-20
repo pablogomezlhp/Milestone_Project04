@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	<link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" type="text/css" />
+</head>
+
+<body>
+	<header>
+
+		<nav>
+			<div class="nav-wrapper">
+				<a href="#" class="brand-logo">Logo</a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a href="{{url_for('index')}}">Home</a></li>
+					<li><a href="{{url_for('show_recipes')}}">List Recipes</a></li>
+					{% if session.username %}
+                            <!--If the user is logged in, they see links to add recipes, view their own recipes and log out in the navbar-->
+                            <li><a href="{{url_for('add_recipe')}}">Add a Recipe</a></li>
+                            <li><a href="#">Your Recipes</a></li>
+                            <li><a href="{{url_for('logout')}}">Log Out</a></li>
+                        {% else %}    
+                            <!--If the user is not logged in, they see links to log in or register in the navbar-->
+                            <li><a href="{{url_for('login')}}">Log In</a></li>
+                            <li><a href="{{url_for('register')}}">Register</a></li>
+                        {% endif %} 
+				</ul>
+			</div>
+		</nav>
+
+	</header>
+	<div class="row">
+		{% block content %} {% endblock %}
+	</div>
+
+<div>
+    <p>Copyright @ PABLO</p>
+</div>
+
+</body>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+            $('.collapsible').collapsible();
+            $('select').material_select();
+            $(".button-collapse").sideNav();
+            $('.slider').slider();
+        });
+
+  
+
+</script>
+
+</html>
