@@ -6,7 +6,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-	<link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" type="text/css" />
+	<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -21,7 +23,7 @@
 					{% if session.username %}
                             <!--If the user is logged in, they see links to add recipes, view their own recipes and log out in the navbar-->
                             <li><a href="{{url_for('add_recipe')}}">Add a Recipe</a></li>
-                            <li><a href="#">Your Recipes</a></li>
+                            <li><a href="{{url_for('user_recipes')}}">Your Recipes</a></li>
                             <li><a href="{{url_for('logout')}}">Log Out</a></li>
                         {% else %}    
                             <!--If the user is not logged in, they see links to log in or register in the navbar-->
@@ -37,9 +39,9 @@
 		{% block content %} {% endblock %}
 	</div>
 
-<div>
-    <p>Copyright @ PABLO</p>
-</div>
+<footer class="section center">
+<p class="foot">Copyright @ PABLO</p>
+</footer>
 
 </body>
 
@@ -53,6 +55,7 @@
             $('select').material_select();
             $(".button-collapse").sideNav();
             $('.slider').slider();
+            $('.modal').modal();
         });
 
   

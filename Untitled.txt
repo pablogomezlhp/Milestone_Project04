@@ -78,3 +78,48 @@ if __name__ == '__main__':
     app.run(host=os.environ.get('IP', '0.0.0.0'),
             port=int(os.environ.get('PORT', '5000')),
             debug=True)
+
+
+
+
+
+
+
+
+            body{
+    background-color:rgb(248,248,255);
+    color:#654321;
+}
+h5{
+    font-family: 'Roboto Slab', serif;
+    font-size: 2rem;
+    line-height: 110%;
+    margin: .82rem 0 .656rem 0;
+}
+h6{
+   font-size: 1.5rem; 
+}
+p{
+    font-family: 0.7rem;
+    font-style:initial;
+}
+.row {
+    margin-top: %;
+    
+}
+#cardfeat{
+    height: 100%;
+}
+.slider{
+    margin-top: 1.5%;
+}
+.card-content{
+    margin-top: 5%;
+}
+
+
+
+
+
+recipes.insert_one(request.form.to_dict())
+    user =  session['username']

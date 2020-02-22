@@ -1,32 +1,36 @@
 {% extends 'base.html'%} {% block content %}
 
 <div class="container"></div>
-<div  class="row">
+<div class="row">
 	<div id="slider" class="slider col s12 m8">
 		<ul class="col s12 13 slides">
 			<li>
-				<img src="https://c1.wallpaperflare.com/preview/944/610/539/acai-acai-bowl-acai-brazil-healthy.jpg"> <!-- random image -->
+				<img src="https://c1.wallpaperflare.com/preview/944/610/539/acai-acai-bowl-acai-brazil-healthy.jpg">
+				<!-- random image -->
 				<div class="caption center-align">
 					<h3>This is our big Tagline!</h3>
 					<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
 				</div>
 			</li>
 			<li>
-				<img src="https://s3.amazonaws.com/ntbrand-wp/livent/wp-content/uploads/2018/08/13155151/SearchFX2_5b229dafac40a9f608232bc8-e1534189919644.jpeg"> <!-- random image -->
+				<img src="https://s3.amazonaws.com/ntbrand-wp/livent/wp-content/uploads/2018/08/13155151/SearchFX2_5b229dafac40a9f608232bc8-e1534189919644.jpeg">
+				<!-- random image -->
 				<div class="caption left-align">
 					<h3>Left Aligned Caption</h3>
 					<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
 				</div>
 			</li>
 			<li>
-				<img src="https://examtimeassets.s3.amazonaws.com/uploads/media/direct/e38f03c267822618bc9d75e4c2cce1ef/Bolo-fit-de-cenoura.jpg"> <!-- random image -->
+				<img src="https://examtimeassets.s3.amazonaws.com/uploads/media/direct/e38f03c267822618bc9d75e4c2cce1ef/Bolo-fit-de-cenoura.jpg">
+				<!-- random image -->
 				<div class="caption right-align">
 					<h3>Right Aligned Caption</h3>
 					<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
 				</div>
 			</li>
 			<li>
-				<img src="https://www.thepierhotellimerick.com/wp-content/uploads/2016/11/55735460-steak-wallpapers.jpg"> <!-- random image -->
+				<img src="https://www.thepierhotellimerick.com/wp-content/uploads/2016/11/55735460-steak-wallpapers.jpg">
+				<!-- random image -->
 				<div class="caption center-align">
 					<h3>This is our big Tagline!</h3>
 					<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
@@ -34,136 +38,101 @@
 			</li>
 		</ul>
 	</div>
-    
-    
-	<div class="col s12 m4"> 
-        <div class="card-content black-text">
-        <ul class="collection with-header">
-                    <li class="collection-header">
-                        <h5>
-                            Features
-                        </h5>
-                    </li>
 
-                    <li class="collection-item avatar">
-                        <img src="/static/img/check-favicon.png" alt="avatar" class="circle">
-                        <span class="title">1. Make an Account</span>
-                        <p class="truncate">
-                            Save your recipes by creating an account.
-                        </p>
-                        <a class="modal-trigger" href="#modal1"><u>Read More</u></a>
-                    </li>
 
-                    <li class="collection-item avatar">
-                        <img src="/static/img/check-favicon.png" alt="spoon" class="circle">
-                        <span class="title">2. Add a Recipe</span>
-                        <p class="truncate">
-                            Create your own personal recipe collection.
-                        </p>
-                        <a class="modal-trigger" href="#modal2"><u>Read More</u></a>
-                    </li>
+	<div class="col s12 m4">
+		<ul class="feat">
+			<li>
+				<h5>Features</h5>
+			</li>
+			<li>
+				<div class="quad"> <i class="material-icons">check_box</i>
+					<h6>1.Make an Account</h6>
+					<p>Save your recipes by creating an account.</p>
+				</div>
+				<!-- Modal Trigger -->
+				<a class="waves-effect waves-light btn modal-trigger" href="#modal1">More</a>
 
-                    <li class="collection-item avatar">
-                        <img src="/static/img/check-favicon.png" alt="database" class="circle">
-                        <span class="title">3. Manage Your Collection</span>
-                        <p class="truncate">
-                            Intuitively organise your personal recipes by tags.
-                        </p>
-                        <a class="modal-trigger" href="#modal3"><u>Read More</u></a>
-                    </li>
+				<!-- Modal Structure -->
+				<div id="modal1" class="modal">
+					<div class="modal-content">
+						<h4>Make an Account</h4>
+						<p>Save your favourite recipes from websites, or simply those from your head, all in one place,
+							accessible on all of your devices, anytime.</p>
+					</div>
+					<div class="modal-footer">
+						<a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+					</div>
+				</div>
+			</li>
 
-                    <li class="collection-item avatar">
-                        <img src="/static/img/check-favicon.png" alt="database" class="circle">
-                        <span class="title">4. Invite Friends to Grubox</span>
-                        <p class="truncate">
-                            Share recipes with other subscribers of Grubox .
-                        </p>
-                        <a class="modal-trigger" href="#modal4"><u>Read More</u></a>
-                    </li>
-                </ul>
-        
+			<li>
+
+				<i class="material-icons">check_box</i>
+				<h6>2. Add a Recipe</h6>
+				<p>Create your own personal recipe collection.</p>
+				<!-- Modal Trigger -->
+				<a class="waves-effect waves-light btn modal-trigger" href="#modal2">More</a>
+				<!-- Modal Structure -->
+				<div id="modal2" class="modal">
+					<div class="modal-content">
+						<h4>Add a Recipe</h4>
+						<p>Create your own personal recipe collection by Searching the internet for recipes, find the
+							recipes you want to saving.</p>
+					</div>
+					<div class="modal-footer">
+						<a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+					</div>
+				</div>
+			</li>
+
+			<li>
+				<i class="material-icons">check_box</i>
+				<h6>3.Invite Friends </h6>
+				<p>Share recipes with other subscribers.</p>
+				<!-- Modal Trigger -->
+				<a class="waves-effect waves-light btn modal-trigger" href="#modal3">More</a>
+
+				<!-- Modal Structure -->
+				<div id="modal3" class="modal">
+					<div class="modal-content">
+						<h4>Invite Friends to Grubox</h4>
+						<p>Invite your friends to join Grubox Online Cookbook, share your recipes with them and view
+							their recipes.</p>
+					</div>
+					<div class="modal-footer">
+						<a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+					</div>
+				</div>
+			</li>
+
+		</ul>
+
 	</div>
-
-
-</div>
 </div>
 
 <h5>Highest Views</h5>
 
-<div class="container">
+
 	<div class="row">
-		<div class="col s2 m3">
+    {% for recipe in recipes %}
+		<div class="col s12 m3">
 			<div class="card">
-				<div class="card-image">
-					<img src="images/sample-1.jpg">
-					<span class="card-title">Card Title</span>
-				</div>
-				<div class="card-content">
-					<p>I am a very simple card. I am good at containing small bits of information.
-						I am convenient because I require little markup to use effectively.</p>
-				</div>
-				<div class="card-action">
-					<a href="#">This is a link</a>
-				</div>
+				
+                <a href="#" class="">  <div class="card-image">    </div>                           </a>
+				
+				<p>{{recipes.recipe_name}}</p>
+				<p>Nemo</p>
 			</div>
-
 		</div>
-
-		<div class="col s2 m3">
-			<div class="card">
-				<div class="card-image">
-					<img src="images/sample-1.jpg">
-					<span class="card-title">Card Title</span>
-				</div>
-				<div class="card-content">
-					<p>I am a very simple card. I am good at containing small bits of information.
-						I am convenient because I require little markup to use effectively.</p>
-				</div>
-				<div class="card-action">
-					<a href="#">This is a link</a>
-				</div>
-			</div>
-
-		</div>
-
-		<div class="col s2 m3">
-			<div class="card">
-				<div class="card-image">
-					<img src="images/sample-1.jpg">
-					<span class="card-title">Card Title</span>
-				</div>
-				<div class="card-content">
-					<p>I am a very simple card. I am good at containing small bits of information.
-						I am convenient because I require little markup to use effectively.</p>
-				</div>
-				<div class="card-action">
-					<a href="#">This is a link</a>
-				</div>
-			</div>
-
-		</div>
-
-		<div class="col s2 m3">
-			<div class="card">
-				<div class="card-image">
-					<img src="images/sample-1.jpg">
-					<span class="card-title">Card Title</span>
-				</div>
-				<div class="card-content">
-					<p>I am a very simple card. I am good at containing small bits of information.
-						I am convenient because I require little markup to use effectively.</p>
-				</div>
-				<div class="card-action">
-					<a href="#">This is a link</a>
-				</div>
-                
-			</div>
-
-		</div>
+         {% endfor %}
+	
+	
+	
 	</div>
-</div>
+				
 
 
 
 
-{% endblock %}
+				{% endblock %}

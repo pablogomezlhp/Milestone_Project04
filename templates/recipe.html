@@ -1,0 +1,68 @@
+{% extends 'base.html'%} {% block content %}
+
+
+<div id="bord" class="row">
+
+
+	<div class="col s12 m6">
+		<img class="imgrecipe" src="{{recipe.image_path}}" alt="">
+    </div>
+		<div class="col s12 m6 center">
+			<p class="recipe_title">{{recipe.recipe_name}}</p>
+			<p class="recipe_author">By {{recipe.recipe_author}}</p>
+
+       <article>
+       
+			<div class="col s12 m4 center">
+			<i class="material-icons">pan_tool</i>
+            <p class="alerta">Allergen</p> <p class="recipe_allergen"> {{recipe.allergen_name}}</p>
+			</div>
+
+            <div class="col s12 m4 center">
+			<i class="material-icons">restaurant</i><p class="alerta">Diet</p>	<p class="recipe_allergen"> {{recipe.diet_name}}</p>
+			</div>
+
+			<div class="col s12 m4 center">
+				<i class="material-icons">map</i><p class="alerta">Cusine</p><p class="recipe_allergen">{{recipe.select_cusine}}</p>
+			</div>
+            </article>
+		</div>
+</div>
+        <div id="borda" class="col s12 m6">
+        <p class="recipe_desc">What you need:</p>
+        <p class="recipe_text">{{recipe.recipe_description}}</p>
+        
+        
+        </div>
+
+        <div id="borda" class="col s12 m6">
+        <p class="recipe_desc">Method:</p>
+        <p class="recipe_text">{{recipe.recipe_method}}</p>
+        
+        
+        </div>
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+	</div>
+
+
+
+
+
+
+
+	{% endblock %}
