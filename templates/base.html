@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -32,6 +33,9 @@
                         {% endif %} 
 				</ul>
 			</div>
+
+
+            </nav> 
 		</nav>
 
 	</header>
@@ -39,6 +43,15 @@
 		{% block content %} {% endblock %}
 	</div>
 
+
+<div class="nav-wrapper deep-orange darken-4">
+                  <form action="{{ url_for('search')}}" method="POST">
+                    <div class="input-field">
+                      <input id="search" name="search" placeholder="Search by keyword" required>
+                      <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                    </div>
+                  </form>
+                </div> <!--End of search field-->
 <footer class="section center">
 <p class="foot">Copyright @ PABLO</p>
 </footer>
@@ -56,6 +69,7 @@
             $(".button-collapse").sideNav();
             $('.slider').slider();
             $('.modal').modal();
+            $(".button-collapse").sideNav();
         });
 
   

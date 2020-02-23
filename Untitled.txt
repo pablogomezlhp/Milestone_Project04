@@ -123,3 +123,13 @@ p{
 
 recipes.insert_one(request.form.to_dict())
     user =  session['username']
+
+
+
+
+     <article class="recipe-card center">
+                    <a href="{{url_for('list_recipes_by_cat', catt_name="Bread")}}" class="recipe-card__thumbnail-container">
+                        
+                    </a>
+                   
+                </article>
