@@ -1,43 +1,45 @@
 {% extends 'base.html'%} {% block content %}
 
+<div class="row">
+	<div id="list_recipe_banner" class="col s12">
 
- <div class="drecipe">
-    <h5>GOOD IDEAS</h5>  
-    <p class="drecipeP">
-TO MAKE YOUR DAY MORE TASTY</p>
-    </div>
-
-    <div id="drecipe" class="row">
-    {% for recipe in recipes %}
-    <div class="col s12 m3">
-			<div id="cardRecipes" class="card">
-				<div class="card-image">
-                  <a href="{{url_for('show_recipe',recipe_id=recipe._id)}}"><img class="imagem" src="{{recipe.image_path}}"></a>
-				</div>
-			</div>
-            <div id="disallrecipe">
-            <p class="recipeTitle">{{recipe.recipe_name}}</p>
-				<p> By {{recipe.recipe_author}}</p>
-            
-            </div>
-            
+		<div class="drecipe">
+			<h5>GOOD IDEAS</h5>
+			<p class="drecipeP">
+				TO MAKE YOUR DAY MORE TASTY</p>
 		</div>
-        
-    
-    {% endfor %}
-    
-    
-    
-    
-    </div>
 
-{% for recipe in recipes %}
-<h1>{{recipe.recipe_name}}</h1>
-    {{recipe.recipe_description}}
-    {{recipe.recipe_ingredients}}
-    {{recipe.recipe_author}}
-    
-{% endfor %}
+	</div>
+</div>
+
+<div class="container">
+
+<div id="drecipe" class="row">
+	{% for recipe in recipes %}
+	<div class="col s12 m4">
+		<div id="mid_borda_showrecipe"class="card ">
+			<div class="card-image">
+				<a href="{{url_for('show_recipe',recipe_id=recipe._id)}}"><img id="mid_borda_showrecipe" src="{{recipe.image_path}}"></a>
+			</div>
+		</div>
+		<div>
+			<p id="text_showrecipe">{{recipe.recipe_name}}</p>
+			<p> By {{recipe.recipe_author}}</p>
+
+		</div>
+
+	</div>
+
+
+	{% endfor %}
+
+</div>
+
+</div>
+
+
+
+
 
 
 

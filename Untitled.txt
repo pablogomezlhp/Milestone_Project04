@@ -133,3 +133,26 @@ recipes.insert_one(request.form.to_dict())
                     </a>
                    
                 </article>
+
+
+
+
+
+
+
+
+
+
+                <div  class="col s12 m3">
+		<div id="cardRecipes" class="card">
+			<div class="card-image">
+				<a href="{{url_for('show_recipe',recipe_id=recipe._id)}}"><img class="imagem" src="{{recipe.image_path}}"></a>
+			</div>
+		</div>
+		<div id="disallrecipe">
+			<p class="recipeTitle">{{recipe.recipe_name}}</p>
+			<p> By {{recipe.recipe_author}}</p>
+
+		</div>
+
+	</div>
