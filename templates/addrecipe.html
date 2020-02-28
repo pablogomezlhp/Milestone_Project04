@@ -12,11 +12,11 @@
 			<div class="input-field col s12 m3 13">
 				<i class="material-icons prefix">more_vert</i>
 				<select id="diet_name" name="diet_name">
-      <option value="" disabled selected>Select Diet</option>
-      {% for cat in categories %}
-        <option value="{{cat.diet_name}}">{{cat.diet_name}}</option>
-      {% endfor %}
-    </select>
+			      <option value="" disabled selected>Select Diet</option>
+			      {% for cat in categories %}
+			        <option value="{{cat.diet_name}}">{{cat.diet_name}}</option>
+			      {% endfor %}
+			    </select>
 			</div>
 			<div class="input_field col s12 m3 13">
 				<i class="material-icons prefix">local_dining</i>
@@ -34,6 +34,7 @@
       <option value="" disabled selected>Select Allergen</option>
       {% for cat in allergen %}
         <option value="{{cat.allergen_name}}">{{cat.allergen_name}}</option>
+        
       {% endfor %}
     </select>
 
