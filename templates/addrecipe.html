@@ -1,12 +1,5 @@
 {% extends 'base.html'%} {% block content %}
-
-
-
-
-
 <div class="row">
-
-
 	<form id="FormAdd" action="{{ url_for('insert_recipe') }}" method="POST" class="col s12">
 		<div class="row">
 			<div class="input-field col s12 m3 13">
@@ -21,24 +14,23 @@
 			<div class="input_field col s12 m3 13">
 				<i class="material-icons prefix">local_dining</i>
 				<select id="select_cusine" name="select_cusine">
-      <option value="" disabled selected>Select Cousine</option>
-      {% for cat in cosine %}
-        <option value="{{cat.select_cusine}}">{{cat.select_cusine}}</option>
-      {% endfor %}
-    </select>
-
+                    <option value="" disabled selected>Select Cousine</option>
+                         {% for cat in cosine %}
+                             <option value="{{cat.select_cusine}}">{{cat.select_cusine}}</option>
+                         {% endfor %}
+                 </select>
 			</div>
 			<div class="input_field col s12 m3 13">
 				<i class="material-icons prefix">close</i>
 				<select id="allergen_name" name="allergen_name">
-      <option value="" disabled selected>Select Allergen</option>
-      {% for cat in allergen %}
-        <option value="{{cat.allergen_name}}">{{cat.allergen_name}}</option>
-        
-      {% endfor %}
-    </select>
+                    <option value="" disabled selected>Select Allergen</option>
+                        {% for cat in allergen %}
+                            <option value="{{cat.allergen_name}}">{{cat.allergen_name}}</option>
+                         {% endfor %}
+                 </select>
 
-			</div><div class="input_field col s12 m3 13">
+			</div>
+			<div class="input_field col s12 m3 13">
 				<i class="material-icons prefix">close</i>
 				<select id="catt_name" name="catt_name">
       <option value="" disabled selected>Select Cattegory</option>
@@ -48,7 +40,6 @@
     </select>
 
 			</div>
-           
 
 			<div class="row">
 				<div class="input-field  col s12 m6 13">
@@ -56,8 +47,6 @@
 					<textarea name="recipe_name" id="recipe_name" class="materialize-textarea"></textarea>
 					<label for="icon_telephone">Add Recipe Name</label>
 				</div>
-  
-
 
 				<div class="input-field col s12 m6 13">
 					<i class="material-icons prefix">account_circle</i>
@@ -74,7 +63,7 @@
 				</div>
 			</div>
 
-            <div class="row">
+			<div class="row">
 				<div class="input-field col s12">
 					<i class="material-icons prefix">subject</i>
 					<textarea name="recipe_method" id="recipe_method" class="materialize-textarea"></textarea>
@@ -85,7 +74,7 @@
 
 			<div class="row">
 				<div class="input-field col s12 m6 13">
-                <i class="material-icons prefix">image</i>
+					<i class="material-icons prefix">image</i>
 					<input id="image_path" name="image_path" type="text" class="validate">
 					<label for="image_path">URL of Image</label>
 				</div>

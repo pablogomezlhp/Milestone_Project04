@@ -7,7 +7,7 @@ import bcrypt
 app = Flask(__name__)
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
 app.config["MONGO_DBNAME"] = 'recipe_site'
-app.config["MONGO_URI"] = 'mongodb+srv://pablolhp:Gavioes13@myfirstcluster-fwrws.mongodb.net/recipe_site?retryWrites=true&w=majority'
+app.config["MONGO_URI"] = 'mongodb+srv://pablolhp:Gavioes13@myfirstcluster-fwrws.mongodb.net/recipe_site?retryWrites=true&w=majority'  # Need be hidded
 
 mongo = PyMongo(app)
 
@@ -74,17 +74,19 @@ def login():
 
 
 @app.route("/logout")
-def logout():
+def logout():  # Clear session (not user logged)
     session.clear()
     return redirect(url_for('index'))
 
 
 @app.route("/show_recipes")
 def show_recipes():
+    # Get all recipes by mongo database and return all the information into the showrecipes.html
     return render_template('showrecipes.html', recipes=mongo.db.recipes.find())
 
 
 @app.route('/list_recipes_by_cat/<catt_name>', methods=['GET', 'POST'])
+# Allows to print all the information by cattegorie
 def list_recipes_by_cat(catt_name):
     """List recipes by category"""
 
@@ -95,13 +97,13 @@ def list_recipes_by_cat(catt_name):
 
 
 @app.route('/add_recipe')
-def add_recipe():
+def add_recipe():  # Display all fields that need to be filled
     return render_template("addrecipe.html",
                            categories=mongo.db.diet.find(), cosine=mongo.db.cuisine.find(), cattegoria=mongo.db.cattegoria.find(), allergen=mongo.db.allergen.find())
 
 
 @app.route('/insert_recipe', methods=['POST'])
-def insert_recipe():
+def insert_recipe():  # Add all the information filled as a new recipe into to the DataBase
     recipes = mongo.db.recipes
 
     new_recipe = {
@@ -123,26 +125,14 @@ def insert_recipe():
     return redirect(url_for('index'))
 
 
-@app.route('/search', methods=['GET', 'POST'])
-def search():
-    """Search for a recipe by keywords"""
-
-    keywords = request.form.get('search')
-
-    query = ({'$text': {'$search': keywords}})
-    results = mongo.db.recipes.find(query)
-    return render_template('listrecipes.html',
-                           recipes=results, count=results.count())
-
-
 @app.route('/show_recipe/<recipe_id>', methods=['GET', 'POST'])
-def show_recipe(recipe_id):
+def show_recipe(recipe_id):  # display the selected recipe using the field ID.
     the_recipe = mongo.db.recipes.find_one({'_id': ObjectId(recipe_id)})
     return render_template('recipe.html', recipe=the_recipe)
 
 
 @app.route('/user_recipes')
-def user_recipes():
+def user_recipes():  # Display receipts listed by user
     user = session['username']
     query = ({'username': user})
     results = mongo.db.recipes.find(query).sort('recipe_name',)
@@ -151,7 +141,7 @@ def user_recipes():
 
 
 @app.route('/edit_recipe/<recipe_id>')
-def edit_recipe(recipe_id):
+def edit_recipe(recipe_id):  # Allow user to Edit the receipts that he have uploaded before
     the_recipe = mongo.db.recipes.find_one({'_id': ObjectId(recipe_id)})
     all_categories = mongo.db.categories.find()
     return render_template(
@@ -159,6 +149,7 @@ def edit_recipe(recipe_id):
 
 
 @app.route('/replacing_recipe<recipe_id>', methods=['POST'])
+# Replace the new data into to the DataBase, if dont have any new document just keep the old field.
 def replacing_recipe(recipe_id):
     mongo.db.recipes.update(
         {'_id': ObjectId(recipe_id)},
@@ -182,7 +173,7 @@ def replacing_recipe(recipe_id):
 
 
 @app.route('/deleting_recipe/<recipe_id>', methods=['GET', 'POST'])
-def deleting_recipe(recipe_id):
+def deleting_recipe(recipe_id):  # Allow user to Delete his receipts
     mongo.db.recipes.remove({'_id': ObjectId(recipe_id)})
     return redirect(url_for('show_recipes'))
 
