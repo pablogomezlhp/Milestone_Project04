@@ -14,9 +14,9 @@
 
 
 {% if count==1 %}
-<p id="recipeQtext">You have been added 1 Recipe</p>
+<p id="recipeQtext">You have  added 1 Recipe</p>
 {% else %}
-<p id="recipeQtext">You have been added {{ count }} Recipes</p>
+<p id="recipeQtext">You have  added {{ count }} Recipes</p>
 
 {% endif %}
 
@@ -29,9 +29,9 @@
 			<div id="mid_borda_showrecipe" class="card ">
 				<div class="card-image">
 					<a href="{{url_for('show_recipe',recipe_id=recipe._id)}}"><img id="mid_borda_showrecipe" src="{{recipe.image_path}}"></a>
-                     <a  id="botaao1"href="{{url_for('edit_recipe',recipe_id=recipe._id)}}" class="waves-effect waves-light btn">Edit</a>
+                     <a id="botaao1"href="{{url_for('edit_recipe',recipe_id=recipe._id)}}" class="waves-effect waves-light black btn">Edit</a>
                 
-                 <a id="botaao" href="{{url_for('deleting_recipe', recipe_id=recipe._id)}}" class="btn waves-effect waves-light">
+                 <a id="botaao" href="{{url_for('deleting_recipe', recipe_id=recipe._id)}}" class="btn waves-effect waves-light black">
                 <i class="material-icons right">delete</i>Delete</a> 
 				</div>
 			</div>

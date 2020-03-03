@@ -10,24 +10,26 @@ body{
     flex: 1 0 auto;
   }
 .brand-logo{
-    margin-top: 2%;
+    margin-top: 1%;
     width: 100px;
-    height: auto;
+    
 }
 
 #page-header{
     margin-top: -50px;
-    background-image: url("https://ak7.picdn.net/shutterstock/videos/10945337/thumb/2.jpg");
+    background-image: url("https://assets.bonappetit.com/photos/5caf9c5c8e35c3685dd0ea46/16:9/w_2560%2Cc_limit/Basically-Steak-Process.jpg");
     background-size: cover;
     height: 70vh;
 }
 .page-title{
-    padding-top: 20rem;
+    padding-top: 7rem;
     font-size: 70px;
     letter-spacing: 5px;
     color:white;
     text-shadow: 4px 3px black;
 }
+
+/*Categories card text*/
 .mid_text1{
     font-size: 40px;
     text-align: center;
@@ -143,6 +145,36 @@ position: absolute;
 font-size: 21px; color: white;
 font-weight:bold;
 padding-left: 5px;
+}
+
+#texto_card_recipes{
+    
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    -webkit-text-stroke-width: 0,5px;
+-webkit-text-stroke-color: white;
+font-size: 30px; color: white;
+font-weight:bold;
+padding-top: 1px;
+
+
+}
+#card_catt_recipes{
+    width: 100%;
+    height: 40px;
+   background-color: black;
+    opacity: 0.9;
+    border-radius: 5px;
+}
+#card_catt_recipes:hover{
+    background-color: grey;
+}
+.text-catt-show{
+    text-align: center;
+    font-family: 'Source Sans Pro' ;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 /*RECIPE PAGE*/
 #list_recipe_banner{
@@ -273,8 +305,10 @@ background-color: black;
 font-size: 50px;
 letter-spacing: 15px;
 border: none;
-padding: 0 15px;
+padding: 0 25px;
 position:fixed;
+
+
 
 }
 h5{
@@ -367,15 +401,32 @@ article{
     margin-top: -2%;
     font-size: 24px;
 }
+/*EDIT RECIPE*/
+#button_edit_recipe{
+    font-size: 14px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+#button_edit_recipe1{
+    font-size: 10px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: red;
+}
+#bot{
+    display: inline;
+}
 
 footer {
 	width: 100%;
 	display: inline-block;
 	background-color: black;
 	color: white;
-	padding-top: 1%;
-	padding-bottom: 1%;
+	max-height: 90vh;
+	margin-top: 15%;
+    
 }
+
 #texto-centro{
 text-align:center;
 }
@@ -385,7 +436,36 @@ text-align:center;
     margin-top: -450px;
     margin-left: 15px;
 }
+#botaoo:hover{
+    background-color: red;
+}
 #botaao1{
     margin-top: -80px;
     margin-left: 220px;
+}
+/*Button go top*/
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+.btn:hover {
+    background-color: grey;
+}
+.option{
+    color: red;
 }

@@ -112,12 +112,16 @@
 			</div>
 
 			<div class="row">
-				<button  href="{{url_for('show_recipe', recipe_id=recipe._id)}}" class="btn waves-effect waves-light" type="submit" name="action">Publish
+            <div id="bot" class="col s12 m6">
+            <button  id="button_edit_recipe" href="{{url_for('show_recipe', recipe_id=recipe._id)}}" class="btn waves-effect waves-light" type="submit" name="action">Update
                     <i class="material-icons right">check</i>
                 </button>
-                <button href="{{url_for('show_recipe', recipe_id=recipe._id)}}" class="btn waves-effect waves-light">
+            
+				
+                <button id="button_edit_recipe1" href="{{url_for('show_recipe', recipe_id=recipe._id)}}" class="btn waves-effect waves-light btn-small">
             <i class="material-icons right">close</i>Cancel</button>
 			</div>
+            </div>
 
 
 

@@ -10,18 +10,19 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    
 </head>
 
 <body>
 	<header>
 
-		<nav>
-			<div class="nav-wrapper">
-				
+        <nav>
+            <div class="nav-wrapper">
                 <img href="#" class="brand-logo"  src="static/pnglogopablo.png" alt="">
-				<ul id="nav-mobile" class="right hide-on-med-and-down">
-					<li><a href="{{url_for('index')}}">Home</a></li>
-					<li><a href="{{url_for('show_recipes')}}">List Recipes</a></li>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="{{url_for('index')}}">Home</a></li>
+                    <li><a href="{{url_for('show_recipes')}}">List Recipes</a></li>
 					{% if session.username %}
                             <!--If the user is logged in, they see links to add recipes, view their own recipes and log out in the navbar-->
                             <li><a href="{{url_for('add_recipe')}}">Add a Recipe</a></li>
@@ -32,21 +33,29 @@
                             <li><a href="{{url_for('login')}}">Log In</a></li>
                             <li><a href="{{url_for('register')}}">Register</a></li>
                         {% endif %} 
-				</ul>
-			</div>
-
-
-            </nav> 
-		</nav>
-
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                   <li><a href="{{url_for('index')}}">Home</a></li>
+                    <li><a href="{{url_for('show_recipes')}}">List Recipes</a></li>
+					{% if session.username %}
+                            <!--If the user is logged in, they see links to add recipes, view their own recipes and log out in the navbar-->
+                            <li><a href="{{url_for('add_recipe')}}">Add a Recipe</a></li>
+                            <li><a href="{{url_for('user_recipes')}}">Your Recipes</a></li>
+                            <li><a href="{{url_for('logout')}}">Log Out</a></li>
+                        {% else %}    
+                            <!--If the user is not logged in, they see links to log in or register in the navbar-->
+                            <li><a href="{{url_for('login')}}">Log In</a></li>
+                            <li><a href="{{url_for('register')}}">Register</a></li>
+                        {% endif %} 
+                </ul>
+            </div>
+        </nav>
 	</header>
 	<div class="row">
 		{% block content %} {% endblock %}
 	</div>
-
-
-
-          <footer class="">
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+         <footer class="">
 
         <p id="texto-centro" >&copy 2020 - Pablo Gomez</p>
 
@@ -66,7 +75,28 @@
             $('.slider').slider();
             $('.modal').modal();
             $(".button-collapse").sideNav();
+            $(".dropdown-trigger").dropdown();
         });
+
+
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
 
   
 

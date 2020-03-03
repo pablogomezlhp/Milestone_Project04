@@ -156,3 +156,32 @@ recipes.insert_one(request.form.to_dict())
 		</div>
 
 	</div>
+
+
+
+
+
+
+
+    		<nav>
+			<div class="nav-wrapper">
+				
+                <img href="#" class="brand-logo"  src="static/pnglogopablo.png" alt="">
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li><a href="{{url_for('index')}}">Home</a></li>
+					<li><a href="{{url_for('show_recipes')}}">List Recipes</a></li>
+					{% if session.username %}
+                            <!--If the user is logged in, they see links to add recipes, view their own recipes and log out in the navbar-->
+                            <li><a href="{{url_for('add_recipe')}}">Add a Recipe</a></li>
+                            <li><a href="{{url_for('user_recipes')}}">Your Recipes</a></li>
+                            <li><a href="{{url_for('logout')}}">Log Out</a></li>
+                        {% else %}    
+                            <!--If the user is not logged in, they see links to log in or register in the navbar-->
+                            <li><a href="{{url_for('login')}}">Log In</a></li>
+                            <li><a href="{{url_for('register')}}">Register</a></li>
+                        {% endif %} 
+				</ul>
+			</div>
+
+
+            </nav> 

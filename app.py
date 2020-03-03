@@ -83,14 +83,15 @@ def logout():
 def show_recipes():
     return render_template('showrecipes.html', recipes=mongo.db.recipes.find())
 
+
 @app.route('/list_recipes_by_cat/<catt_name>', methods=['GET', 'POST'])
 def list_recipes_by_cat(catt_name):
-    
     """List recipes by category"""
 
-    results=mongo.db.recipes.find({'catt_name': catt_name}).sort('recipe_title',1)
-    return render_template('showrecipes.html', 
-    recipes=results, count=results.count())
+    results = mongo.db.recipes.find(
+        {'catt_name': catt_name}).sort('recipe_title', 1)
+    return render_template('showrecipes.html',
+                           recipes=results, count=results.count())
 
 
 @app.route('/add_recipe')
@@ -121,18 +122,17 @@ def insert_recipe():
 
     return redirect(url_for('index'))
 
+
 @app.route('/search', methods=['GET', 'POST'])
 def search():
-    
     """Search for a recipe by keywords"""
-    
-    
+
     keywords = request.form.get('search')
-    
-    query = ( { '$text': { '$search': keywords } } )
+
+    query = ({'$text': {'$search': keywords}})
     results = mongo.db.recipes.find(query)
-    return render_template('listrecipes.html', 
-    recipes=results, count=results.count())
+    return render_template('listrecipes.html',
+                           recipes=results, count=results.count())
 
 
 @app.route('/show_recipe/<recipe_id>', methods=['GET', 'POST'])
@@ -155,33 +155,35 @@ def edit_recipe(recipe_id):
     the_recipe = mongo.db.recipes.find_one({'_id': ObjectId(recipe_id)})
     all_categories = mongo.db.categories.find()
     return render_template(
-        'editrecipe.html', recipe=the_recipe, categories=all_categories,categori=mongo.db.diet.find(), cosine=mongo.db.cuisine.find(), cattegoria=mongo.db.cattegoria.find(), allergen=mongo.db.allergen.find())
+        'editrecipe.html', recipe=the_recipe, categories=all_categories, categori=mongo.db.diet.find(), cosine=mongo.db.cuisine.find(), cattegoria=mongo.db.cattegoria.find(), allergen=mongo.db.allergen.find())
 
-@app.route('/replacing_recipe<recipe_id>',methods=['POST'])
+
+@app.route('/replacing_recipe<recipe_id>', methods=['POST'])
 def replacing_recipe(recipe_id):
     mongo.db.recipes.update(
-        {'_id':ObjectId(recipe_id)},
+        {'_id': ObjectId(recipe_id)},
         {
-        'recipe_name': request.form.get('recipe_title'),
-        'image_path': request.form.get('image_path'),
-        'diet_name': request.form.get('diet_name'),
-        'select_cusine': request.form.get('select_cusine'),
-        'allergen_name': request.form.get('allergen_name'),
-        'recipe_name': request.form.get('recipe_name'),
-        'recipe_author': request.form.get('recipe_author'),
-        'recipe_description': request.form.get('recipe_description'),
-        'recipe_method': request.form.get('recipe_method'),
-        'catt_name': request.form.get('catt_name'),
-        'username': session['username']
+            'recipe_name': request.form.get('recipe_title'),
+            'image_path': request.form.get('image_path'),
+            'diet_name': request.form.get('diet_name'),
+            'select_cusine': request.form.get('select_cusine'),
+            'allergen_name': request.form.get('allergen_name'),
+            'recipe_name': request.form.get('recipe_name'),
+            'recipe_author': request.form.get('recipe_author'),
+            'recipe_description': request.form.get('recipe_description'),
+            'recipe_method': request.form.get('recipe_method'),
+            'catt_name': request.form.get('catt_name'),
+            'username': session['username']
 
 
         })
-    the_recipe = mongo.db.recipes.find_one({'_id':ObjectId(recipe_id)})
-    return render_template('recipe.html',recipe=the_recipe)
+    the_recipe = mongo.db.recipes.find_one({'_id': ObjectId(recipe_id)})
+    return render_template('recipe.html', recipe=the_recipe)
+
 
 @app.route('/deleting_recipe/<recipe_id>', methods=['GET', 'POST'])
 def deleting_recipe(recipe_id):
-    mongo.db.recipes.remove({'_id':ObjectId(recipe_id)})
+    mongo.db.recipes.remove({'_id': ObjectId(recipe_id)})
     return redirect(url_for('show_recipes'))
 
 
