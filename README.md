@@ -243,52 +243,31 @@ https://en.wikipedia.org/wiki/JQuery d3.js
 TMDB api https://www.themoviedb.org/documentation/api
 Fontawesome https://fontawesome.com
 GoogleFonts https://fonts.google.com
-[HTML] is a semantic markup language utilised as the shell of the site.
+* [HTML](https://www.w3schools.com/html/html5_intro.asp) is a semantic markup language utilised as the shell of the site.
 
-CSS means Cascading Style Sheets and was used on the design of the site.
+* [CSS](https://en.wikipedia.org/wiki/HTML ) means Cascading Style Sheets and was used on the design of the site.
 
-Python was utilised to compose the game logic.
+* [Python](https://www.python.org) was utilised to compose the project logic.
 
-Flask is a Python web framework, library used for developing web applications.
+* [Flask](https://www.fullstackpython.com/flask.html) is a Python web framework, library used for developing web applications.
 
-MongoDB is a NoSQL database program, to implement a data-store using JSON-like documents with schema.
+* [MongoDB](https://www.mongodb.com) is a NoSQL database program, to implement a data-store using JSON-like documents with schema.
 
-Jinja2 was utilised to render HTML templates, imparting between front-end and back-end.
+* [Jinja2](https://pypi.org/project/Jinja2/) was utilised to render HTML templates, imparting between front-end and back-end.
 
-jQuery is used for HTML document traversal and manipulation, event handling.
+* [jQuery](https://jquery.com) is used for HTML document traversal and manipulation, event handling.
 
-javascript is used to create responsive, interactive elements for web pages, enhancing the user experience.
+* [javascript](https://en.wikipedia.org/wiki/JavaScript) is used to create responsive, interactive elements for web pages, enhancing the user experience.
 
-Materialize is utilised for developing the entire UI and consistent throughout, also including Material Design Icons courtesy of Google.
+* [Materialize](https://materializecss.com) is utilised for developing the entire UI and consistent throughout, also including Material Design Icons courtesy of Google.
 
-Google Fonts provides the Josefin Sans and sans-serif fonts applied across the entire website
-
-Font Awesome is the source for the social media icons.
-## User Testing
-The following test cases have been performed to test functionality:
-     -	Alert pop-up
-* Expected Behavior = Informs that the name entered has no data available for reading
-Form input movie name 
-* Expected Behavior = All movies having the entered word are listed in the field below
-Click on Movie Details 
-* Expected Behavior = Page Reloads with Movie Info 
-hover over IMDB icon  
-* Expected Behavior = Hover is enabled by changing the color icon. 
-Click on IMDB icon 
-* Expected Behavior = Website loads IMDB page for movie 
- Click on the "Visit Movie Site" link 
-* Expected Behavior = Movie Site Page (If Existing) Will Load 
- Pass Clicking on the "Go back" link on the header 
- Expected Behavior = Site Returns Home
+* [Google Fonts](https://fonts.google.com) provides the Source Sans Pro fonts applied across the entire website
 
 
-HTML validated via https://validator.w3.org/ - Pass CSS validated via https://jigsaw.w3.org/css-validator/ - Pass Deployment
-For this project, I have used Atom to deployed my project and Github Pages to host the application.
-Below are the steps I have taken to achieve this:
-Navigate to "settings"; Scroll down to "GitHub Pages" section (see image below); Selected "master branch" and deployed. Deployment
+
 ## Github Pages Link
-https://pablogomezlhp.github.io/TestNonius/
-Credits https://www.themoviedb.org/documentation/api
+https://github.com
+Credits https://easyfood.ie
 Copyright 2020 - Pablo Patrick
 
 
