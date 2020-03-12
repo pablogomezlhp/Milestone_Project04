@@ -163,8 +163,7 @@ def add_recipe():
 
 
 
-class recipe(BaseModel):
-    recipe_name = str
+
 
 @app.route('/insert_recipe', methods=['POST'])
 def insert_recipe():
@@ -192,7 +191,7 @@ def insert_recipe():
 
     
 
-    return redirect(url_for('index', form=form))
+    return redirect(url_for('index'))
 
 
 @app.route('/show_recipe/<recipe_id>', methods=['GET', 'POST'])
