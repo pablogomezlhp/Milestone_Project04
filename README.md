@@ -222,16 +222,18 @@ Manual testing was embraced for this application and acceptably passed. An examp
               
               PORT | 5000 SECRET_KEY | <your_secret_key>
 
-To retrieve your MONGO_URI please reference the official MongoDB Atlas documentation here
-On the dashboard click "Deploy or alternatively in the "Automatic Deployment" section enable "Automatic Deploys" (optional).
+* To retrieve your MONGO_URI please reference the official MongoDB Atlas documentation [here](https://docs.atlas.mongodb.com
+)
+* In the dashboard click "Deploy or alternatively in the "Automatic Deployment" section enable "Automatic Deploys" (optional).
 
-In the "Manual Deploy" section, set the branch to "master" then click "Deploy Branch."
+* In the "Manual Deploy" section, set the branch to "master" then click "Deploy Branch."
 
 
 
 
 Tools and Methods Used for Testing
-### Technologies used in this project:
+### Technologies:
+#### Languages, Libraries & Frameworks
 HTML5:
 https://en.wikipedia.org/wiki/HTML CSS3:
 https://en.wikipedia.org/wiki/Cascading_Style_Sheets Bootstrap 4:
@@ -241,6 +243,27 @@ https://en.wikipedia.org/wiki/JQuery d3.js
 TMDB api https://www.themoviedb.org/documentation/api
 Fontawesome https://fontawesome.com
 GoogleFonts https://fonts.google.com
+[HTML] is a semantic markup language utilised as the shell of the site.
+
+CSS means Cascading Style Sheets and was used on the design of the site.
+
+Python was utilised to compose the game logic.
+
+Flask is a Python web framework, library used for developing web applications.
+
+MongoDB is a NoSQL database program, to implement a data-store using JSON-like documents with schema.
+
+Jinja2 was utilised to render HTML templates, imparting between front-end and back-end.
+
+jQuery is used for HTML document traversal and manipulation, event handling.
+
+javascript is used to create responsive, interactive elements for web pages, enhancing the user experience.
+
+Materialize is utilised for developing the entire UI and consistent throughout, also including Material Design Icons courtesy of Google.
+
+Google Fonts provides the Josefin Sans and sans-serif fonts applied across the entire website
+
+Font Awesome is the source for the social media icons.
 ## User Testing
 The following test cases have been performed to test functionality:
      -	Alert pop-up
