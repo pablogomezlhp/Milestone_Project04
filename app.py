@@ -1,14 +1,10 @@
 import os
-from flask import Flask, render_template, redirect, session, request, \
-    url_for, flash
+from flask import Flask, render_template, redirect, session, request, url_for, flash
 from flask_pymongo import PyMongo, pymongo
 from bson.objectid import ObjectId
 import bcrypt
 import settings
 from utils import is_password_valid
-from os import path
-from pydantic import BaseModel, Field
-
 
 if path.exists('env.py'):
     import env

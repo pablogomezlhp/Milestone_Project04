@@ -5,4 +5,4 @@ MONGO_DB_NAME = 'recipe_site'
 
 PORT = int(os.environ.get('PORT', '5000'))
 HOST = os.environ.get('IP', '0.0.0.0')
-DEBUG = True # Remove when published on Heroku
+DEBUG = True 
