@@ -27,19 +27,25 @@ As a user of this site, I would like to see details about the recipes, such as m
 ### Ipad
 
 
+<img width="511" alt="Screenshot 2020-03-12 at 18 55 32" src="https://user-images.githubusercontent.com/51464234/76558742-c4a0d200-6495-11ea-9371-40852e55e492.png">
+<img width="511" alt="Screenshot 2020-03-12 at 19 02 47" src="https://user-images.githubusercontent.com/51464234/76558777-d1bdc100-6495-11ea-8165-b84a17756683.png">
+<img width="511" alt="Screenshot 2020-03-12 at 19 02 59" src="https://user-images.githubusercontent.com/51464234/76558800-db472900-6495-11ea-8d32-53b29d689a8e.png">
 
+<img width="511" alt="Screenshot 2020-03-12 at 19 14 18" src="https://user-images.githubusercontent.com/51464234/76558829-ea2ddb80-6495-11ea-828c-4ebf0bbab02e.png">
 
 
 
 
 
 ### Mobile
+<img width="363" alt="Screenshot 2020-03-12 at 19 16 39" src="https://user-images.githubusercontent.com/51464234/76558979-324cfe00-6496-11ea-9142-e5296ea2e926.png">
+<img width="363" alt="Screenshot 2020-03-12 at 19 16 51" src="https://user-images.githubusercontent.com/51464234/76559000-3c6efc80-6496-11ea-8dca-58fad25f0a81.png">
+<img width="363" alt="Screenshot 2020-03-12 at 19 16 59" src="https://user-images.githubusercontent.com/51464234/76559013-4264dd80-6496-11ea-8d6e-e60c9aae7baa.png">
+<img width="363" alt="Screenshot 2020-03-12 at 19 17 18" src="https://user-images.githubusercontent.com/51464234/76559024-47c22800-6496-11ea-87c6-59f0dea2637b.png">
+<img width="363" alt="Screenshot 2020-03-12 at 19 17 28" src="https://user-images.githubusercontent.com/51464234/76559035-4e509f80-6496-11ea-8d77-3ad9f3b4a943.png">
+<img width="363" alt="Screenshot 2020-03-12 at 19 17 41" src="https://user-images.githubusercontent.com/51464234/76559058-5577ad80-6496-11ea-99c5-4dfa318f4eb1.png">
+<img width="363" alt="Screenshot 2020-03-12 at 19 17 50" src="https://user-images.githubusercontent.com/51464234/76559072-5a3c6180-6496-11ea-9f15-4b9c8062c135.png">
 
-<img width="378" alt="Screenshot 2020-02-07 at 22 13 10" src="https://user-images.githubusercontent.com/51464234/74071115-dd334d80-49fa-11ea-923c-0971e0b6f532.png">
-
-<img width="378" alt="Screenshot 2020-02-07 at 22 13 20" src="https://user-images.githubusercontent.com/51464234/74071138-f20fe100-49fa-11ea-9991-e12a14aac5e5.png">
-
-<img width="378" alt="Screenshot 2020-02-07 at 22 13 30" src="https://user-images.githubusercontent.com/51464234/74071157-018f2a00-49fb-11ea-9d72-0fd8e13fcb91.png">
   
 
 ## Features
