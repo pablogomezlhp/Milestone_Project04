@@ -99,7 +99,131 @@ Allows a user to read all recipes within the app.
 Allows a user to read all recipes created by themselves.
 
 ### Features left to implement
-The user Mark feature coudn't be add.
+
+
+* Upgrade current and add additional sifting features
+* Include tags on the recipe view page which contains a word or two offering additional recipe related details.
+* Add the likelihood to include more than one picture or give pictures to each progression.
+* Include remarks area plans
+* Add capacity to transfer user photographs
+* Add capacity to alter user profile, change the username, password or email.
+
+### Testing
+
+
+* HTML
+
+Freeformatter
+
+The W3C Markup Validation Service
+
+* CSS
+
+The W3C Markup Validation Service
+
+* Python
+
+Python Formatter
+
+* Phones
+
+
+Galaxy Note 9
+Galaxy S5
+Galaxy S9/S9+
+iPhone 5/SE
+iPhone 6/7/8 (simulated and real device)
+iPhone 6/7/8 Plus
+iPhone X
+LG Optimus L70
+Microsoft Lumia 550
+Microsoft Lumia 950
+Nexus 5X
+Nexus 6P
+Nokia 8110 4G
+Pixel 2
+Pixel 2 XL
+Tablets
+
+iPad (simulation and actual device)
+iPad Mini
+iPad Pro (10.5-inch)
+iPad Pro (12.9-inch) (simulated and real device)
+Kindle Fire HDX
+Nexus 10
+Nexus 7
+
+* Laptops
+
+MacBook Pro (simulated and real device)
+Asus UX 305 (simulation and actual device)
+
+* Televisions
+
+1080p Full HD Television (simulated and real device)
+Website responsiveness was also tested by resizing the window with every addition of a new code sequence.
+#### Tested Sections 1 HTML & CSS
+
+* External links to third party websites and code authors GitHub repository.
+
+* Checked button sizes so, they were responsive and large enough to be clicked.
+
+* Ensured individual section headers resized and appeared well when viewed on various device screens and added opacity to the navigation bar to allow for more visibility of section header area on smaller devices.
+
+* Spell checked all text content.
+
+* HTML and CSS validation via w3.org.
+
+* Checked margins and padding of the container (sections) to ensure the content within it did not look disproportionate on various screen sizes, individually smaller devices.
+
+* Tested Sections 2 Python
+
+Manual testing was embraced for this application and acceptably passed. An example of the tests directed are as per the following:
+
+### Deployment
+
+#### How the project got deployed to Heroku
+
+1. Make a requirements.txt file utilizing the terminal command 'pip freeze > requirements.txt
+
+2. Make a Procfile with the terminal command echo web: python app.py > Procfile
+
+3. git add and git commit the new prerequisites from the requirements.txt file and Procfile, then 'git push' the undertaking to GitHub.
+
+4. Go to Heroku website.
+
+5. Make another application (app) on the Heroku website by tapping the "New" button on your dashboard. Name your app, followed by selecting Europe as your region.
+
+6. Select application
+
+7. In the "Deployment Method" section, check to see if the application is already connected to GitHub. If not connected then click the relevant button to link the Heroku website to the dashboard.
+
+8. Affirm the connecting of the Heroku application to the right GitHub repository.
+
+9. In the application dashboard, click on "Settings" > "Reveal Config Vars".
+
+10. Set the accompanying config vars:
+
+<table>
+     <thead>
+          <th>Key</th>
+          <th>Value</th>
+     </thead>
+     <tbody>
+          <tr>
+               <td>DEBUG</td>
+               <td>FALSE</td>
+               </tr>
+          <tr>
+               <td>MONGO_URI</td>
+               <td>mongodb+srv://<username>:<password>@cluster0-0oagu.gcp.mongodb.net/recipebook?retryWrites=true</td>
+                    </tr>
+              
+
+
+
+
+Tools and Methods Used for Testing
 ### Technologies used in this project:
 HTML5:
 https://en.wikipedia.org/wiki/HTML CSS3:
