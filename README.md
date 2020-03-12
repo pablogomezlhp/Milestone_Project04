@@ -3,7 +3,7 @@ Time to find a good recipe!
 A web application that allows users to store and easily access cooking recipes.
 https://milestoneproject04pablosilva.herokuapp.com
 
-##Goal
+## Goal
 
 Create a web applications which enables users to create, read, update and delete (CRUD) their online cookbook. Users can fabricate their recipe database by collecting recipes. The application can be used by non-enrolled users but registred user can use the like/dislike feature.
 
@@ -43,13 +43,60 @@ As a user of this site, I would like to see details about the recipes, such as m
 <img width="363" alt="Screenshot 2020-03-12 at 19 17 28" src="https://user-images.githubusercontent.com/51464234/76559035-4e509f80-6496-11ea-8d77-3ad9f3b4a943.png"> <img width="363" alt="Screenshot 2020-03-12 at 19 17 41" src="https://user-images.githubusercontent.com/51464234/76559058-5577ad80-6496-11ea-99c5-4dfa318f4eb1.png">
 <img width="363" alt="Screenshot 2020-03-12 at 19 17 50" src="https://user-images.githubusercontent.com/51464234/76559072-5a3c6180-6496-11ea-9f15-4b9c8062c135.png">
 
-  
+### Template Style
+
+I opted for the Materialize framework. As a tool, Bootstrap is excellent to get started, but I feel it cannot create a real quality UI without the need to write a considerable amount of custom CSS to get anywhere close to the look and feel of Materialize which looks great even out of the box.
+
+### Font
+
+The Source Sans Pro choice was selected. The typeface is geometric, elegant, and has a vintage feeling; thus, helping to emphasise a soft natural vibe to the displayed text content which I felt was appropiate for a food app; a subjective opinion, of course.
+
+
+### Navigation
+
+A navigation bar takes up space and a fixed bar. in this case and that there is a lot of content to be displayed in the form of recipes, etc., I found that it was not necessary to fix the navigation, as there was no real advantage.
+
+## Database Structure
+<img width="642" alt="Screenshot 2020-03-12 at 19 29 26" src="https://user-images.githubusercontent.com/51464234/76559922-fadf5100-6497-11ea-87fa-510f2925c362.png"> <img width="684" alt="Screenshot 2020-03-12 at 19 30 01" src="https://user-images.githubusercontent.com/51464234/76559924-fc107e00-6497-11ea-8d1e-6abd890623d7.png">
 
 ## Features
 ### Existing features
-The home page features archiving data through local storage, so the latest search is saved and made available without the customer having to type again. It also has an alert that tells you if there are data that relate to the text you entered.
-After the movie is selected the site loads a new page that shows the original title of the movie, shows the duration, the company responsible for the production of the movie. It shows a brief introduction to the history of the movie and also has an icon that leads to the IMDB website.
-The page also provides an official website of the company responsible for the production of the film.
+Existing Features
+
+* Home Page
+
+It is used to access the user registration page field, account page, recipes page, create/edit page, sign out link, sign in/sign up page.
+
+* Sign Up
+
+I have used for a user to register for an account so they can log in into the app.
+
+* Sign In
+
+Used for a user to login to the app so to access and utilise all available features.
+
+* MongoDB (NoSQL Database)
+
+Stores recipe and user objects.
+
+* Create Page
+It is applied for a user to create recipe data.
+
+* Edit Page
+
+For user to update and delete recipe data.
+
+* View Page
+
+It is for a user to update and delete recipe data.
+
+* Recipe Page
+
+Allows a user to read all recipes within the app.
+
+* Account Page
+
+Allows a user to read all recipes created by themselves.
 
 ### Features left to implement
 The user Mark feature coudn't be add.
