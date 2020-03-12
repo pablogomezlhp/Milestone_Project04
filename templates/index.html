@@ -1,82 +1,64 @@
 {% extends 'base.html'%} {% block content %}
-
-
 <div id="page-header" class="row center">
-	<h1 class="page-title">
-		Delicious recipes.
-		<br>
-        Daily updated.
-    </h1>
-
+   <h1 class="page-title">
+      Delicious recipes.
+      <br>
+      Daily updated.
+   </h1>
 </div>
-
-
-
 <div class="row">
-	<p class="mid_text1">Most Popular Categories</p>
-	<p class="mid_text2">Be sure not to miss out the categories of these most popular
-		<br>
-  categories. Enjoy trying them out!</p>
+   <p class="mid_text1">Most Popular Categories</p>
+   <p class="mid_text2">Be sure not to miss out the categories of these most popular
+      <br>
+      categories. Enjoy trying them out!
+   </p>
 </div>
-
-
 <div class="row">
-
-	<div id="mar_cont" class="container">
-    
-		<div class="row">
-			<div class="col s12 m4">
-				<a href="{{url_for('list_recipes_by_cat', catt_name="Bread")}}" id="mid_borda"
-					class="card-image waves-effect waves-block waves-light">
-					<img id="card_catt" src="https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/GtuAR0I/videoblocks-asian-food-set-noodles-fried-rice-with-chicken-tom-yum-soup-spring-rolls-deep-fried-fish-and-udon-with-prawns-top-view-on-dark-rustic-background-oriental-style-food-circle-composition_h_4vlo9jm_thumbnail-full01.png">
-					<h4 id="texto_card">BREAKFAST</h4>
-				</a>
-			</div>
-
-			<div class="col s12 m4">
-				<a href="{{url_for('list_recipes_by_cat', catt_name="Salads")}}" id="mid_borda"
-					class="card-image waves-effect waves-block waves-light">
-					<img id="card_catt" src="https://img3.goodfon.com/wallpaper/nbig/4/ad/salat-caprese-food-kapreze-237.jpg">
-					<h4 id="texto_card">SALADS</h4>
-				</a>
-			</div>
-
-
-			<div class="col s12 m4">
-				<a href="{{url_for('list_recipes_by_cat', catt_name="Appertizers")}}" id="mid_borda"
-					class="card-image waves-effect waves-block waves-light">
-					<img id="card_catt" src="https://www.sheknows.com/wp-content/uploads/2018/12/qr3lmfp21vbnldxjy6vq.jpeg">
-					<h2 id="texto_card">APPETIZERS</h2>
-				</a>
-			</div>
-
-			<div class="col s12 m4">
-				<a href="{{url_for('list_recipes_by_cat', catt_name="Soups")}}" id="mid_borda"
-					class="card-image waves-effect waves-block waves-light">
-					<img id="card_catt" src="https://giveitsomethyme.com/wp-content/uploads/2019/01/Carrot-Soup-Feature2-e1547050640326.jpg">
-					<h2 id="texto_card">SOUPS</h2>
-				</a>
-			</div>
-
-			<div class="col s12 m4">
-				<a href="{{url_for('list_recipes_by_cat', catt_name="Mains")}}" id="mid_borda"
-					class="card-image waves-effect waves-block waves-light">
-					<img id="card_catt" src="https://butterchickenfactory.ca/wp-content/uploads/2017/11/bgheader8.jpg">
-					<h2 id="texto_card">MAIN DISHES</h2>
-				</a>
-			</div>
-
-			<div class="col s12 m4">
-				<a href="{{url_for('list_recipes_by_cat', catt_name="Desserts")}}" id="mid_borda"
-					class="card-image waves-effect waves-block waves-light">
-					<img id="card_catt" src="https://assets.bonappetit.com/photos/5a395c7d5a60b108cf7a969e/16:9/w_2560%2Cc_limit/salty-chocolate-chunk-cookies-16-9.jpg">
-					<h2 id="texto_card">DESSERTS</h2>
-				</a>
-			</div>
-		</div>
-
-
-	</div>
+   <div id="mar_cont" class="container">
+      <div class="row">
+         <div class="col s12 m4">
+            <a href="{{url_for('list_recipes_by_cat', catt_name="Bread")}}" id="mid_borda"
+            class="card-image waves-effect waves-block waves-light">
+            <img id="card_catt" src="https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/GtuAR0I/videoblocks-asian-food-set-noodles-fried-rice-with-chicken-tom-yum-soup-spring-rolls-deep-fried-fish-and-udon-with-prawns-top-view-on-dark-rustic-background-oriental-style-food-circle-composition_h_4vlo9jm_thumbnail-full01.png">
+            <h4 id="texto_card">BREAKFAST</h4>
+            </a>
+         </div>
+         <div class="col s12 m4">
+            <a href="{{url_for('list_recipes_by_cat', catt_name="Salads")}}" id="mid_borda"
+            class="card-image waves-effect waves-block waves-light">
+            <img id="card_catt" src="https://img3.goodfon.com/wallpaper/nbig/4/ad/salat-caprese-food-kapreze-237.jpg">
+            <h4 id="texto_card">SALADS</h4>
+            </a>
+         </div>
+         <div class="col s12 m4">
+            <a href="{{url_for('list_recipes_by_cat', catt_name="Appertizers")}}" id="mid_borda"
+            class="card-image waves-effect waves-block waves-light">
+            <img id="card_catt" src="https://www.sheknows.com/wp-content/uploads/2018/12/qr3lmfp21vbnldxjy6vq.jpeg">
+            <h2 id="texto_card">APPETIZERS</h2>
+            </a>
+         </div>
+         <div class="col s12 m4">
+            <a href="{{url_for('list_recipes_by_cat', catt_name="Soups")}}" id="mid_borda"
+            class="card-image waves-effect waves-block waves-light">
+            <img id="card_catt" src="https://giveitsomethyme.com/wp-content/uploads/2019/01/Carrot-Soup-Feature2-e1547050640326.jpg">
+            <h2 id="texto_card">SOUPS</h2>
+            </a>
+         </div>
+         <div class="col s12 m4">
+            <a href="{{url_for('list_recipes_by_cat', catt_name="Mains")}}" id="mid_borda"
+            class="card-image waves-effect waves-block waves-light">
+            <img id="card_catt" src="https://butterchickenfactory.ca/wp-content/uploads/2017/11/bgheader8.jpg">
+            <h2 id="texto_card">MAIN DISHES</h2>
+            </a>
+         </div>
+         <div class="col s12 m4">
+            <a href="{{url_for('list_recipes_by_cat', catt_name="Desserts")}}" id="mid_borda"
+            class="card-image waves-effect waves-block waves-light">
+            <img id="card_catt" src="https://assets.bonappetit.com/photos/5a395c7d5a60b108cf7a969e/16:9/w_2560%2Cc_limit/salty-chocolate-chunk-cookies-16-9.jpg">
+            <h2 id="texto_card">DESSERTS</h2>
+            </a>
+         </div>
+      </div>
+   </div>
 </div>
-
 {% endblock %}

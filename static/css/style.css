@@ -5,34 +5,40 @@ body {
 	min-height: 100vh;
 	flex-direction: column;
 }
+
 input:focus {
-    border-bottom: 1px solid black !important;
-    box-shadow: 0 1px 0 0 black !important;
+	border-bottom: 1px solid black !important;
+	box-shadow: 0 1px 0 0 black !important;
 }
 
 label.active {
-    color: black!important;
-}
-textarea{
-    color: black !important;
-}
-option {
-    color: black !important;
+	color: black!important;
 }
 
-.brand-logo { /* Adjust Logo Position*/
+textarea {
+	color: black !important;
+}
+
+option {
+	color: black !important;
+}
+
+.brand-logo {
+	/* Adjust Logo Position*/
 	margin-top: 1%;
 	width: 100px;
 }
 
-#page-header { /* Adjust a image header to a 70% to header page */
+#page-header {
+	/* Adjust a image header to a 70% to header page */
 	margin-top: -50px;
 	background-image: url("https://cdn.foodandwineespanol.com/2019/01/salad-1264107_1920.jpg");
 	background-size: cover;
 	height: 70vh;
 }
 
-.page-title { /* setted a tittle config */
+.page-title {
+	/* setted a tittle config */
 	padding-top: 9rem;
 	font-size: 70px;
 	letter-spacing: 5px;
@@ -42,6 +48,7 @@ option {
 
 
 /*Categories card text*/
+
 .mid_text1 {
 	font-size: 40px;
 	text-align: center;
@@ -121,11 +128,13 @@ option {
 	color: white;
 	text-shadow: 1px 3px black;
 }
-.drecipe{
-    margin-top: 5%;
+
+.drecipe {
+	margin-top: 5%;
 }
-.drecipeP{
-    margin-top: 2%;
+
+.drecipeP {
+	margin-top: 2%;
 }
 
 #card_catt_showrecipes {
@@ -164,7 +173,7 @@ option {
 #text_showrecipe {
 	margin-top: -55px;
 	position: absolute;
-	-webkit-text-stroke-width:0.1px;
+	-webkit-text-stroke-width: 0.1px;
 	-webkit-text-stroke-color: rgb(255, 255, 255);
 	font-size: 22px;
 	color: rgb(231, 231, 231);
@@ -174,7 +183,6 @@ option {
 
 #text_showrecipe_likes {
 	margin-top: -230px;
-   
 	position: absolute;
 	-webkit-text-stroke-width: 0.02px;
 	-webkit-text-stroke-color: white;
@@ -184,14 +192,14 @@ option {
 	padding-left: 5px;
 }
 
-#like{
-    color:rgb(14, 14, 160);
-    margin-left:30%;
-    
+#like {
+	color: rgb(14, 14, 160);
+	margin-left: 30%;
 }
-#dislike{
-    color:rgb(211, 29, 29);
-    margin-left:20%;
+
+#dislike {
+	color: rgb(211, 29, 29);
+	margin-left: 20%;
 }
 
 #texto_card_recipes {
@@ -482,7 +490,6 @@ footer {
 	background-color: black;
 	color: white;
 	max-height: 70vh;
-	
 }
 
 #texto-centro {
@@ -491,12 +498,11 @@ footer {
 
 #botaao {
 	margin-top: -405px;
-    margin-left: 70px;
-	
+	margin-left: 70px;
 }
 
 #botaoo:hover {
-	background-color:darkred;
+	background-color: darkred;
 }
 
 #botaao1 {
@@ -548,12 +554,15 @@ footer {
 .option {
 	color: red;
 }
-#registerfoot{
-    height: 90vh;
+
+#registerfoot {
+	height: 90vh;
 }
-#loginfoot{
-    height: 85vh;
+
+#loginfoot {
+	height: 85vh;
 }
-#formlogin{
-    margin-top:10%;
+
+#formlogin {
+	margin-top: 10%;
 }
