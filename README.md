@@ -220,6 +220,12 @@ Manual testing was embraced for this application and acceptably passed. An examp
                     </tr>
 </table>
               
+              PORT | 5000 SECRET_KEY | <your_secret_key>
+
+To retrieve your MONGO_URI please reference the official MongoDB Atlas documentation here
+On the dashboard click "Deploy or alternatively in the "Automatic Deployment" section enable "Automatic Deploys" (optional).
+
+In the "Manual Deploy" section, set the branch to "master" then click "Deploy Branch."
 
 
 
