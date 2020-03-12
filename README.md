@@ -218,6 +218,7 @@ Manual testing was embraced for this application and acceptably passed. An examp
                <td>MONGO_URI</td>
                <td>mongodb+srv://<username>:<password>@cluster0-0oagu.gcp.mongodb.net/recipebook?retryWrites=true</td>
                     </tr>
+</table>
               
 
 
