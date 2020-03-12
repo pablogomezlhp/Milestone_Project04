@@ -5,6 +5,7 @@ from bson.objectid import ObjectId
 import bcrypt
 import settings
 from utils import is_password_valid
+from os import path
 
 if path.exists('env.py'):
     import env
