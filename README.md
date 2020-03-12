@@ -38,12 +38,9 @@ As a user of this site, I would like to see details about the recipes, such as m
 
 
 ### Mobile
-<img width="363" alt="Screenshot 2020-03-12 at 19 16 39" src="https://user-images.githubusercontent.com/51464234/76558979-324cfe00-6496-11ea-9142-e5296ea2e926.png">
-<img width="363" alt="Screenshot 2020-03-12 at 19 16 51" src="https://user-images.githubusercontent.com/51464234/76559000-3c6efc80-6496-11ea-8dca-58fad25f0a81.png">
-<img width="363" alt="Screenshot 2020-03-12 at 19 16 59" src="https://user-images.githubusercontent.com/51464234/76559013-4264dd80-6496-11ea-8d6e-e60c9aae7baa.png">
-<img width="363" alt="Screenshot 2020-03-12 at 19 17 18" src="https://user-images.githubusercontent.com/51464234/76559024-47c22800-6496-11ea-87c6-59f0dea2637b.png">
-<img width="363" alt="Screenshot 2020-03-12 at 19 17 28" src="https://user-images.githubusercontent.com/51464234/76559035-4e509f80-6496-11ea-8d77-3ad9f3b4a943.png">
-<img width="363" alt="Screenshot 2020-03-12 at 19 17 41" src="https://user-images.githubusercontent.com/51464234/76559058-5577ad80-6496-11ea-99c5-4dfa318f4eb1.png">
+<img width="363" alt="Screenshot 2020-03-12 at 19 16 39" src="https://user-images.githubusercontent.com/51464234/76558979-324cfe00-6496-11ea-9142-e5296ea2e926.png"> <img width="363" alt="Screenshot 2020-03-12 at 19 16 51" src="https://user-images.githubusercontent.com/51464234/76559000-3c6efc80-6496-11ea-8dca-58fad25f0a81.png">
+<img width="363" alt="Screenshot 2020-03-12 at 19 16 59" src="https://user-images.githubusercontent.com/51464234/76559013-4264dd80-6496-11ea-8d6e-e60c9aae7baa.png"> <img width="363" alt="Screenshot 2020-03-12 at 19 17 18" src="https://user-images.githubusercontent.com/51464234/76559024-47c22800-6496-11ea-87c6-59f0dea2637b.png">
+<img width="363" alt="Screenshot 2020-03-12 at 19 17 28" src="https://user-images.githubusercontent.com/51464234/76559035-4e509f80-6496-11ea-8d77-3ad9f3b4a943.png"> <img width="363" alt="Screenshot 2020-03-12 at 19 17 41" src="https://user-images.githubusercontent.com/51464234/76559058-5577ad80-6496-11ea-99c5-4dfa318f4eb1.png">
 <img width="363" alt="Screenshot 2020-03-12 at 19 17 50" src="https://user-images.githubusercontent.com/51464234/76559072-5a3c6180-6496-11ea-9f15-4b9c8062c135.png">
 
   
