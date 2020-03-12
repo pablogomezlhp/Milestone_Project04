@@ -6,6 +6,8 @@
             $('.modal').modal();
             $(".button-collapse").sideNav();
             $(".dropdown-trigger").dropdown();
+
+
         });
 
 

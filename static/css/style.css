@@ -5,6 +5,20 @@ body {
 	min-height: 100vh;
 	flex-direction: column;
 }
+input:focus {
+    border-bottom: 1px solid darkred !important;
+    box-shadow: 0 1px 0 0 darkred !important;
+}
+
+label.active {
+    color: darkred !important;
+}
+textarea{
+    color: darkred !important;
+}
+option {
+    color: darkred !important;
+}
 
 .brand-logo { /* Adjust Logo Position*/
 	margin-top: 1%;
@@ -107,6 +121,12 @@ body {
 	color: white;
 	text-shadow: 1px 3px black;
 }
+.drecipe{
+    margin-top: 5%;
+}
+.drecipeP{
+    margin-top: 2%;
+}
 
 #card_catt_showrecipes {
 	width: auto;
@@ -151,6 +171,28 @@ body {
 	color: white;
 	font-weight: bold;
 	padding-left: 5px;
+}
+
+#text_showrecipe_likes {
+	margin-top: -230px;
+   
+	position: absolute;
+	-webkit-text-stroke-width: 0.02px;
+	-webkit-text-stroke-color: white;
+	font-size: 15px;
+	color: white;
+	font-weight: bold;
+	padding-left: 5px;
+}
+
+#like{
+    color:rgb(14, 14, 160);
+    margin-left:30%;
+    
+}
+#dislike{
+    color:rgb(211, 29, 29);
+    margin-left:20%;
 }
 
 #texto_card_recipes {

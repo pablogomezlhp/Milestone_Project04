@@ -19,7 +19,7 @@
 
         <nav>
             <div class="nav-wrapper">
-                <img href="#" class="brand-logo"  src="static/image/pnglogopablo.png" alt="">
+                <img href="#" class="brand-logo"  src="static/image/logo.png" alt="">
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a href="{{url_for('index')}}">Home</a></li>
@@ -68,39 +68,7 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-<script type="text/javascript">
-	$(document).ready(function() {
-            $('.collapsible').collapsible();
-            $('select').material_select();
-            $(".button-collapse").sideNav();
-            $('.slider').slider();
-            $('.modal').modal();
-            $(".button-collapse").sideNav();
-            $(".dropdown-trigger").dropdown();
-        });
+<script src="{{url_for('static', filename='javascript/config.js')}}"></script>
 
-
-mybutton = document.getElementById("myBtn");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
-
-  
-
-</script>
 
 </html>
